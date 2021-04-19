@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pi</title>
+</head>
+<body>
+    <h1>THE pi</h1>
+
+    {% if user.is_authenticated %}
+    <a href="/accounts/logout" >Logout</a>
+    {% else %}
+    <a href="/accounts/login" >Login</a>
+    {% endif %}
+        
+    {% block content %}
+    {% endblock %}
+
+    <p>copyright@THEpi.News</p>
+</body>
+</html>
